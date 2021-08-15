@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43109E91-35BC-435D-8531-6F11F204D760}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyTLD</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\..\bin\</OutDir>
+    <TargetName>$(ProjectName)D</TargetName>
+    <IncludePath>$(IncludePath);..\..\..\src;..\..\..\src\cvblobs;..\..\..\src\imacq;..\..\..\src\main;..\..\..\src\mftracker;..\..\..\src\tld;C:\opencv\build\include;C:\opencv\build\include\opencv;C:\opencv\build\include\opencv2</IncludePath>
+    <LibraryPath>C:\opencv\build\x86\vc11\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>C:\opencv\build\x86\vc11\bin;$(ExecutablePath)</ExecutablePath>
+    <SourcePath>C:\opencv\modules\core\src;C:\opencv\modules\highgui\src;C:\opencv\modules\ml\src;C:\opencv\modules\objdetect\src;C:\opencv_orig\modules\contrib\src;C:\opencv_orig\modules\features2d\src;C:\opencv_orig\modules\imgproc\src;C:\opencv_orig\modules\legacy\src;C:\opencv_orig\modules\ml\src;C:\opencv_orig\modules\nonfree\src;C:\opencv_orig\modules\ocl\src;C:\opencv_orig\modules\photo\src;C:\opencv_orig\modules\stitching\src;C:\opencv_orig\modules\ts\src;C:\opencv_orig\modules\video\src;C:\opencv_orig\modules\videostab\src;C:\opencv_orig\modules\world\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>.\..\bin\</OutDir>
+    <IncludePath>$(IncludePath);..\..\..\src;..\..\..\src\cvblobs;..\..\..\src\imacq;..\..\..\src\main;..\..\..\src\mftracker;..\..\..\src\tld;C:\opencv\build\include;C:\opencv\build\include\opencv;C:\opencv\build\include\opencv2</IncludePath>
+    <LibraryPath>C:\opencv\build\x86\vc11\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>C:\opencv\build\x86\vc11\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\cvblobs\blob.cpp" />
+    <ClCompile Include="..\..\..\src\cvblobs\BlobContour.cpp" />
+    <ClCompile Include="..\..\..\src\cvblobs\BlobOperators.cpp" />
+    <ClCompile Include="..\..\..\src\cvblobs\BlobProperties.cpp" />
+    <ClCompile Include="..\..\..\src\cvblobs\BlobResult.cpp" />
+    <ClCompile Include="..\..\..\src\cvblobs\ComponentLabeling.cpp" />
+    <ClCompile Include="..\..\..\src\imacq\imAcq.cpp" />
+    <ClCompile Include="..\..\..\src\main\config.cpp" />
+    <ClCompile Include="..\..\..\src\main\gui.cpp" />
+    <ClCompile Include="..\..\..\src\main\Main.cpp" />
+    <ClCompile Include="..\..\..\src\main\settings.cpp" />
+    <ClCompile Include="..\..\..\src\mftracker\bb.cpp" />
+    <ClCompile Include="..\..\..\src\mftracker\bb_predict.cpp" />
+    <ClCompile Include="..\..\..\src\mftracker\fbtrack.cpp" />
+    <ClCompile Include="..\..\..\src\mftracker\lk.cpp" />
+    <ClCompile Include="..\..\..\src\mftracker\median.cpp" />
+    <ClCompile Include="..\..\..\src\runtld.cpp" />
+    <ClCompile Include="..\..\..\src\tld\Clustering.cpp" />
+    <ClCompile Include="..\..\..\src\tld\DetectionResult.cpp" />
+    <ClCompile Include="..\..\..\src\tld\DetectorCascade.cpp" />
+    <ClCompile Include="..\..\..\src\tld\EnsembleClassifier.cpp" />
+    <ClCompile Include="..\..\..\src\tld\ForegroundDetector.cpp" />
+    <ClCompile Include="..\..\..\src\tld\MedianFlowTracker.cpp" />
+    <ClCompile Include="..\..\..\src\tld\NNClassifier.cpp" />
+    <ClCompile Include="..\..\..\src\tld\TLD.cpp" />
+    <ClCompile Include="..\..\..\src\tld\TLDUtil.cpp" />
+    <ClCompile Include="..\..\..\src\tld\VarianceFilter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\cvblobs\blob.h" />
+    <ClInclude Include="..\..\..\src\cvblobs\BlobContour.h" />
+    <ClInclude Include="..\..\..\src\cvblobs\BlobLibraryConfiguration.h" />
+    <ClInclude Include="..\..\..\src\cvblobs\BlobOperators.h" />
+    <ClInclude Include="..\..\..\src\cvblobs\BlobProperties.h" />
+    <ClInclude Include="..\..\..\src\cvblobs\BlobResult.h" />
+    <ClInclude Include="..\..\..\src\cvblobs\ComponentLabeling.h" />
+    <ClInclude Include="..\..\..\src\imacq\imAcq.h" />
+    <ClInclude Include="..\..\..\src\main\config.h" />
+    <ClInclude Include="..\..\..\src\main\gui.h" />
+    <ClInclude Include="..\..\..\src\main\Main.h" />
+    <ClInclude Include="..\..\..\src\main\settings.h" />
+    <ClInclude Include="..\..\..\src\mftracker\bb.h" />
+    <ClInclude Include="..\..\..\src\mftracker\bb_predict.h" />
+    <ClInclude Include="..\..\..\src\mftracker\fbtrack.h" />
+    <ClInclude Include="..\..\..\src\mftracker\lk.h" />
+    <ClInclude Include="..\..\..\src\mftracker\median.h" />
+    <ClInclude Include="..\..\..\src\tld\Clustering.h" />
+    <ClInclude Include="..\..\..\src\tld\DetectionResult.h" />
+    <ClInclude Include="..\..\..\src\tld\DetectorCascade.h" />
+    <ClInclude Include="..\..\..\src\tld\EnsembleClassifier.h" />
+    <ClInclude Include="..\..\..\src\tld\ForegroundDetector.h" />
+    <ClInclude Include="..\..\..\src\tld\IntegralImage.h" />
+    <ClInclude Include="..\..\..\src\tld\MedianFlowTracker.h" />
+    <ClInclude Include="..\..\..\src\tld\NNClassifier.h" />
+    <ClInclude Include="..\..\..\src\tld\NormalizedPatch.h" />
+    <ClInclude Include="..\..\..\src\tld\TLD.h" />
+    <ClInclude Include="..\..\..\src\tld\TLDUtil.h" />
+    <ClInclude Include="..\..\..\src\tld\VarianceFilter.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cvblobs">
+      <UniqueIdentifier>{1a7fa068-7b4d-42f4-8592-f5d79f569aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imacq">
+      <UniqueIdentifier>{c2c241e2-dd45-484f-8267-06da94fef487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{1fb3963a-42f7-4e4d-983a-b36767d98805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mftracker">
+      <UniqueIdentifier>{6114dd96-cc8b-4e73-a430-fefbc8a74e90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tld">
+      <UniqueIdentifier>{14b97d2c-0723-4c88-a716-93aaa85a0f82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\runtld.cpp" />
+    <ClCompile Include="..\..\..\src\imacq\imAcq.cpp">
+      <Filter>imacq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\main\config.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\main\gui.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\main\Main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\main\settings.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cvblobs\blob.cpp">
+      <Filter>cvblobs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cvblobs\BlobContour.cpp">
+      <Filter>cvblobs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cvblobs\BlobOperators.cpp">
+      <Filter>cvblobs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cvblobs\BlobProperties.cpp">
+      <Filter>cvblobs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cvblobs\BlobResult.cpp">
+      <Filter>cvblobs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cvblobs\ComponentLabeling.cpp">
+      <Filter>cvblobs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mftracker\bb.cpp">
+      <Filter>mftracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mftracker\bb_predict.cpp">
+      <Filter>mftracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mftracker\fbtrack.cpp">
+      <Filter>mftracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mftracker\lk.cpp">
+      <Filter>mftracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mftracker\median.cpp">
+      <Filter>mftracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\Clustering.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\DetectionResult.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\DetectorCascade.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\EnsembleClassifier.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\ForegroundDetector.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\MedianFlowTracker.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\NNClassifier.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\TLD.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\TLDUtil.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tld\VarianceFilter.cpp">
+      <Filter>tld</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\imacq\imAcq.h">
+      <Filter>imacq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\main\config.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\main\gui.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\main\Main.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\main\settings.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cvblobs\blob.h">
+      <Filter>cvblobs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cvblobs\BlobContour.h">
+      <Filter>cvblobs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cvblobs\BlobLibraryConfiguration.h">
+      <Filter>cvblobs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cvblobs\BlobOperators.h">
+      <Filter>cvblobs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cvblobs\BlobProperties.h">
+      <Filter>cvblobs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cvblobs\BlobResult.h">
+      <Filter>cvblobs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cvblobs\ComponentLabeling.h">
+      <Filter>cvblobs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mftracker\bb.h">
+      <Filter>mftracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mftracker\bb_predict.h">
+      <Filter>mftracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mftracker\fbtrack.h">
+      <Filter>mftracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mftracker\lk.h">
+      <Filter>mftracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mftracker\median.h">
+      <Filter>mftracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\Clustering.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\DetectionResult.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\DetectorCascade.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\EnsembleClassifier.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\ForegroundDetector.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\IntegralImage.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\MedianFlowTracker.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\NNClassifier.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\NormalizedPatch.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\TLD.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\TLDUtil.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tld\VarianceFilter.h">
+      <Filter>tld</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

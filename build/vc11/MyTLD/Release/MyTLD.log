@@ -1,0 +1,22 @@
+﻿  Main.cpp
+..\..\..\src\main\Main.cpp(109): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+..\..\..\src\main\Main.cpp(152): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  bb_predict.cpp
+..\..\..\src\mftracker\bb_predict.cpp(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+..\..\..\src\mftracker\bb_predict.cpp(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  fbtrack.cpp
+  lk.cpp
+..\..\..\src\mftracker\lk.cpp(281): warning C4244: “=”: 从“const double”转换到“float”，可能丢失数据
+..\..\..\src\mftracker\lk.cpp(282): warning C4244: “=”: 从“const double”转换到“float”，可能丢失数据
+..\..\..\src\mftracker\lk.cpp(283): warning C4244: “=”: 从“const double”转换到“float”，可能丢失数据
+..\..\..\src\mftracker\lk.cpp(284): warning C4244: “=”: 从“const double”转换到“float”，可能丢失数据
+..\..\..\src\mftracker\lk.cpp(306): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  median.cpp
+  TLD.cpp
+..\..\..\src\tld\TLD.cpp(492): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+..\..\..\src\tld\TLD.cpp(523): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+..\..\..\src\tld\TLD.cpp(545): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  TLDUtil.cpp
+  正在生成代码
+  已完成代码的生成
+  MyTLD.vcxproj -> F:\tracking\MyTLD\build\vc11\MyTLD\.\..\bin\MyTLD.exe

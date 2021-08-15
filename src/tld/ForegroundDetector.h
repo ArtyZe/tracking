@@ -1,0 +1,38 @@
+/*
+ * ForegroundDetector.h
+ *
+ *  Created on: Nov 16, 2011
+ *      Author: Georg Nebehay
+ */
+
+#ifndef FOREGROUNDDETECTOR_H_
+#define FOREGROUNDDETECTOR_H_
+
+#include <vector>
+#include <opencv/cv.h>
+
+#include "DetectionResult.h"
+
+using namespace std;
+using namespace cv;
+
+namespace tld
+{
+
+class ForegroundDetector
+{
+public:
+    int fgThreshold;
+    int minBlobSize;
+    Mat bgImg;
+    DetectionResult * detectionResult;
+
+    ForegroundDetector();
+    virtual ~ForegroundDetector();
+    void release();
+    void nextIteration(Mat img);
+    bool isActive();
+};
+
+} /* namespace tld */
+#endif /* FOREGROUNDDETECTOR_H_ */

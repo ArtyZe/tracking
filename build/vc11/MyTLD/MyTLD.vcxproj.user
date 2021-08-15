@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerWorkingDirectory>.\..\bin\</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-i E:\videos\irtracking\airtracking01_352x288.avi -w 640 -h 360 -t 0.5 -minwin 15 -minscale -10 -maxscale 10 -learnEn 1 -shiftEn 1 -shift 0.1 -trackEn 1 -vfilterEn 1 -esClassEn 1 -nnClassEn 1 -nTrees 10 -nFeatures 13 -p 0.65 -n 0.5 -trajectory 20</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerWorkingDirectory>.\..\bin\</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-i E:\videos\irtracking\airtracking08_720x480.avi -w 640 -h 480 -t 0.5 -minwin 15 -minscale -10 -maxscale 10 -learnEn 1 -shiftEn 1 -shift 0.1 -trackEn 1 -vfilterEn 1 -esClassEn 1 -nnClassEn 1 -nTrees 10 -nFeatures 13 -p 0.65 -n 0.5 -trajectory 20 -f</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>

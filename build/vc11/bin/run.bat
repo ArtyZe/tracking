@@ -1,0 +1,1 @@
+MyTLDD.exe -i E:\work\数据集\车辆跟踪\video\police16_1920x1080.avi -w 960 -h 540 -t 0.5 -minwin 25 -minscale -10 -maxscale 10 -learnEn 1 -shiftEn 1 -shift 0.1 -trackEn 1 -vfilterEn 1 -esClassEn 1 -nnClassEn 1 -nTrees 10 -nFeatures 10 -p 0.65 -n 0.5 -trajectory 20
